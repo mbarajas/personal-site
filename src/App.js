@@ -10,15 +10,20 @@ function App() {
         <h1>
           Manuel Jose Barajas
         </h1>
-        <a
-          className="App-link"
-          href="https://github.com/mbarajas"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
+        <div className="columns is-mobile">
+          <div className="column">
+            <a className="App-link" href="https://github.com/mbarajas" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </div>
+          <div className="column">
+            <a className="App-link" href="https://www.linkedin.com/in/manuel-barajas" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+          </div>
+        </div>
       </header>
+      <p> This is my website </p>
     </div>
   );
 }
