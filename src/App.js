@@ -1,30 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import Home from './Home'
+import Status from './Status'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
-          Manuel Jose Barajas
-        </h1>
-        <div className="columns is-mobile">
-          <div className="column">
-            <a className="App-link" href="https://github.com/mbarajas" target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
-          </div>
-          <div className="column">
-            <a className="App-link" href="https://www.linkedin.com/in/manuel-barajas" target="_blank" rel="noopener noreferrer">
-              LinkedIn
-            </a>
-          </div>
-        </div>
-      </header>
-      <p> This is my website </p>
-    </div>
+    <main>
+      <Switch>
+        <Route exact path = "/" component = {Home} />
+        <Route exact path = "/status" component = {Status} />
+      </Switch>
+    </main>
   );
 }
 
